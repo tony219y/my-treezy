@@ -1,3 +1,4 @@
+import Image from 'next/image'
 
 const Treepreview = () => {
 
@@ -43,7 +44,7 @@ const Treepreview = () => {
         <div className="grid grid-cols-4 w-full gap-4 items-center justify-center max-lg:grid-cols-2 max-md:grid-cols-1">
             {listTree.map((tree) => ( 
                 <div key={tree.id} className="flex flex-col min-w-[200px] w-fit min-h-[450px] bg-[#c0cfb2] rounded-2xl justify-between items-center mx-auto p-4 gap-4 drop-shadow-lg">
-                    <img src={tree.image} alt={tree.name} className="w-[200px] h-[250px] object-cover object-center rounded-xl hover:scale-110 duration-300 drop-shadow-sm" />
+                    <Image width={200} height={250} src={tree.image} alt={tree.name} className="w-[200px] h-[250px] object-cover object-center rounded-xl hover:scale-110 duration-300 drop-shadow-sm" />
                     <h1 className="text-center font-bold text-nowrap">{tree.name}</h1>
                     <p className="text-center">ตระกูล {tree.family}</p>
                     <p className="text-center max-w-[200px]">{tree.description}</p>
