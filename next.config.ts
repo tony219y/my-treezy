@@ -9,7 +9,15 @@ const nextConfig: NextConfig = {
       'media.istockphoto.com', 
       'www.bumbleplants.com', 
       'images.pexels.com'
-    ], // เพิ่ม hostname ที่ใช้โหลดภาพ
+    ], 
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "http://localhost:8080/api/:path*",
+      },
+    ];
   },
 };
 

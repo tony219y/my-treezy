@@ -1,5 +1,5 @@
 import { TreeDeciduous } from "lucide-react"
-import { LoginForm } from "@/components/login-form"
+import LoginForm  from "@/components/login-form"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -10,7 +10,7 @@ export default function Page() {
         <div className="flex justify-center gap-2 md:justify-start ">
           <Link href="/" className="flex items-center gap-2 font-medium">
             <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
-            <TreeDeciduous color="white" fill="#ffffff" />
+            <TreeDeciduous fill="black"/>
             </div>
             TREEZY
           </Link>

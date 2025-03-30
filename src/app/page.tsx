@@ -2,13 +2,11 @@
 
 import Treepreview from "@/components/Treepreview";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation"; // เปลี่ยนเป็น next/navigation
+import { useRouter } from "next/navigation";
 
 const Page = () => {
   const router = useRouter();
-  const handleLogin = () => {
-    router.push("/login");
-  }
+
   return (
     <div className="flex flex-col min-h-screen bg-[#f1ebe1]">
       {/* Section 1 */}
@@ -29,7 +27,7 @@ const Page = () => {
             <p className="text-white text-xl font-light max-md:text-base"> 
               - Let&apos;s trees be your friends- 
             </p>
-            <Button onClick={handleLogin} className="w-[200px] bg-[#c0cfb2] hover:bg-[#44624a] hover:text-white duration-300">Join Us</Button>
+            <Button onClick={()=>router.push("/login")} className="w-[200px] bg-[#c0cfb2] hover:bg-[#44624a] hover:text-white duration-300">Join Us</Button>
         </div>
       </div>
 

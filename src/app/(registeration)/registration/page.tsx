@@ -1,7 +1,7 @@
 import { TreeDeciduous } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { SignupForm } from "@/components/signup-form"
+import  SignupForm  from "@/components/signup-form"
 
 export default function Page() {
   return (
@@ -18,7 +18,7 @@ export default function Page() {
         <div className="flex justify-center gap-2 md:justify-start ">
           <Link href="/" className="flex items-center gap-2 font-medium">
             <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
-            <TreeDeciduous color="white" fill="#ffffff" />
+            <TreeDeciduous fill="black" />
             </div>
             TREEZY
           </Link>
